@@ -1,0 +1,225 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(7,51,140,1) 100%);
+    
+}
+h1{
+    color: #9E91B7;
+    font-family: 'panthera' ;
+}
+p{
+    color: white;
+    font-family: 'cantarella' ;
+}
+h2{
+    color: #3D2DA6;
+    font-family: 'Beyno' ;
+}
+
+@font-face {
+    font-family: 'Beyno' ;
+    src: url('../assets/fonts/beyno/BEYNO.otf');
+}
+@font-face {
+    font-family: 'cantarella' ;
+    src: url('../assets/fonts/cantarella/Cantarell-Regular.ttf');
+}
+@font-face {
+    font-family: 'panthera' ;
+    src: url('../assets/fonts/panther/PantheraRegular-MVZ9J.ttf');
+}
+
+header{
+    background: rgb(2,23,64);
+    background: linear-gradient(90deg, rgba(2,23,64,1) 57%, rgba(7,51,140,0.5592612044817927) 97%);
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a{
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Beyno' ;
+}
+.nav a:hover{
+    text-decoration: underline;
+    color: #9E91B7 ;
+}
+#actif{
+    text-decoration: underline;
+    color: #9E91B7 ;
+}
+/* partie 1 */
+.partie1{
+    background-image: url("../assets/Illustrations + Logo/Wakanda/Pantherwakanda1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(1, 8, 22);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.txt1{
+    width: 50vw;
+    padding-left: 10%;
+}
+.txt1 h1{
+    font-size: 60px;
+}
+.txt1 h2{
+    font-size: 2em;
+}
+.txt1 h1, h2{
+    margin: 0%;
+    color: #9E91B7;
+}
+.txt1 p {
+    font-size: 1em;
+    color: white;
+}
+
+/* PARTIE 2 */
+.partie2{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 6%, rgba(2,23,64,1) 48%);
+    height: 100%;
+    
+}
+.image-fond1{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../assets/Illustrations + Logo/Wakanda/Pantherwakanda2.png");
+    background-size: cover;
+}
+.txt2{
+    width: 50vw;
+    padding: 5% 8% 0%;
+}
+.video{
+    margin-left: 8%;
+    margin-bottom: 10%;
+    width: 25vw;
+    height: 5rem;
+    background-color: #9E91B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fond2{
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche, .droite{
+    width: 50vw;
+    padding: 0% 8%;
+}
+.image1{
+    height: 50vh;
+    background-image: url("../assets/Illustrations + Logo/Wakanda/Pantherwakanda2-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+}
+.image1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    background-image: url("../assets/Illustrations + Logo/All pages/back_footer.png");
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+.rond img{
+    height: auto;
+    width: 25vw;
+}
+.rond{
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 45vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/Illustrations + Logo/All pages/footer1.png");
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 50%;
+    height: 50%;
+}
+.right{
+    margin-left: 25%;
+    width: 100%;
+    padding-top: 3%;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.propos{
+    display: flex;
+    flex-direction: column;
+}
+.retrouver{
+    width: 100%;
+    margin-left: 25%;
+}
+.icones a, .retrouver h3{
+    margin-left: 5%;
+}
+.row2{
+    padding-top: 15%;
+}
+footer h3, .propos a{
+    color: white;
+    text-decoration: none;
+}
+
+/* SCROLL */
+.scroll{
+    position: fixed;
+    top: 0%;
+}
+.scroll{
+    .left-bar, .mini-left-bar{
+        border-left: 2px solid gray;
+        height: 410px;
+        position: absolute;
+        left: 30px;
+        top: 0%;
+    }
+    .mini-left-bar{
+        height: 250px;
+        left: 60px;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 275px;
+        left: 55px;
+    }
+
+    .social img{
+        width: 20px;
+        height: 20px;
+    }
+}
